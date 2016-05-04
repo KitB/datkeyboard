@@ -78,6 +78,7 @@ enum KeyboardState {
 #define F11 KEY_F11
 #define F12 KEY_F12
 #define APS '\''
+#define BKS '\\'
 
 // English letter frequency order:
 // ETAOINSHRDULCMFY WGPVBKXQJZ
@@ -90,7 +91,7 @@ const int mapping[N_PINS][N_PINS] = {
     { UP, ' ', ' ', END, ' ',   '3', 'b', 'k', 'x', F11}, // r4
     {RIT, ' ', ' ', INS, CPS,   '4', ' ', ' ', ' ', F12}, // r5
 
-    {'d', 'c', 'm', 'f', ' ',   '5', CTL, ' ',  F1,  F6}, // l1
+    {'d', 'c', 'm', 'f', BKS,   '5', CTL, WIN,  F1,  F6}, // l1
     {'l', 't', 'i', 'r', '`',   '6', ' ', SFT,  F2,  F7}, // l2
     {'u', 'a', 'e', 'h', '=',   '7', ']', ALT,  F3,  F8}, // l3
     {'y', 's', 'n', 'o', '-',   '8', '[', ' ',  F4,  F9}, // l4
